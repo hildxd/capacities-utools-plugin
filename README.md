@@ -7,3 +7,6 @@
 
 ## 使用说明
 查看[utools-plugin-template](https://github.com/QC2168/utools-plugin-template.git) README
+
+## Capacities api doc
+https://api.capacities.io/docs/
