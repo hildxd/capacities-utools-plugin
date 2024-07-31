@@ -5,6 +5,7 @@ import electron from 'vite-plugin-electron'
 import { rmSync } from 'node:fs'
 import { notBundle } from 'vite-plugin-electron/plugin'
 import react from '@vitejs/plugin-react'
+import path from 'node:path'
 
 
 
@@ -84,6 +85,11 @@ export default defineConfig(({ command, mode }) => {
       }
     ]),
     ],
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
+    },
     server: {
       host: pkg.env.VITE_DEV_SERVER_HOST,
       port: pkg.env.VITE_DEV_SERVER_PORT,

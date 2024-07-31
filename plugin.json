@@ -4,16 +4,51 @@
 	"preload": "preload.js",
 	"name": "your plugin ID",
 	"version": "1.0.0",
-	"pluginName": "template",
-	"description": "plugin template",
-	"author": "QC2168",
-	"homepage": "https://github.com/QC2168",
+	"pluginName": "Capacities",
+	"description": "Capacities plugin",
+	"author": "hildxd",
+	"homepage": "https://github.com/hildxd",
 	"features": [
 		{
-			"code": "template",
-			"explain": "插件模板主界面",
+			"code": "Set Token",
+			"explain": "Set token",
 			"cmds": [
-				"template"
+				"Set token"
+			]
+		},
+		{
+			"code": "Save Weblink",
+			"explain": "Save Weblink",
+			"cmds": [
+				"Save Weblink"
+			]
+		},
+		{
+			"code": "Search Content",
+			"explain": "Search Content",
+			"cmds": [
+				"Search Content"
+			]
+		},
+		{
+			"code": "Sync Data",
+			"explain": "Sync Data",
+			"cmds": [
+				"Sync Data"
+			]
+		},
+		{
+			"code": "Save to Daily Note",
+			"explain": "Save to Daily Note",
+			"cmds": [
+				"Save to Daily Note"
+			]
+		},
+		{
+			"code": "Open Space",
+			"explain": "Open Space",
+			"cmds": [
+				"Open Space"
 			]
 		}
 	]
