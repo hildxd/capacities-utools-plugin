@@ -1,1 +1,1 @@
-export const CAPACITIESkEY = 'capacitiesKey'
+export const CAPACITIESKEY = 'capacitiesKey'

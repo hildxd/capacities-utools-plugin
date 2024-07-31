@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { useCallback, useEffect, useState } from "react"
-import { CAPACITIESkEY } from "./constants"
+import { CAPACITIESKEY } from "./constants"
 import { useToast } from "./components/ui/use-toast"
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   const [revId, setRevId] = useState<string | null>(null)
 
   useEffect(() => {
-    const res = window.utools.db.get(CAPACITIESkEY)
+    const res = window.utools.db.get(CAPACITIESKEY)
     if (res) {
       setCapacitiesKey(res.data)
       setRevId(res._rev ?? null)
@@ -21,7 +21,7 @@ function App() {
   const handleSave = useCallback(() => {
 
     const dbDoc: DbDoc = {
-      _id: CAPACITIESkEY,
+      _id: CAPACITIESKEY,
       data: capacitiesKey
     }
     if (revId) {
